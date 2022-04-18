@@ -9,12 +9,36 @@
 /* Begin PBXBuildFile section */
 		26AF0F9A280DE2A400107AE3 /* TokensView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF0F98280DE2A400107AE3 /* TokensView.h */; };
 		26AF0F9B280DE2A400107AE3 /* TokensView.docc in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0F99280DE2A400107AE3 /* TokensView.docc */; };
+		26AF0F9D280DE54000107AE3 /* TokenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0F9C280DE54000107AE3 /* TokenUtils.swift */; };
+		26AF0F9F280DE63500107AE3 /* TokenColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0F9E280DE63500107AE3 /* TokenColorButton.swift */; };
+		26AF0FA1280DE74E00107AE3 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AF0FA0280DE74E00107AE3 /* Icons.xcassets */; };
+		26AF0FA3280DE7B200107AE3 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FA2280DE7B200107AE3 /* Token.swift */; };
+		26AF0FA5280DE7E700107AE3 /* TokenAttachmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FA4280DE7E600107AE3 /* TokenAttachmentCell.swift */; };
+		26AF0FA7280DE8AF00107AE3 /* TokensTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FA6280DE8AF00107AE3 /* TokensTextFieldCell.swift */; };
+		26AF0FA9280DEE2600107AE3 /* TokensTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FA8280DEE2600107AE3 /* TokensTextField.swift */; };
+		26AF0FAB280DEF8B00107AE3 /* TokensColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FAA280DEF8B00107AE3 /* TokensColorPickerView.swift */; };
+		26AF0FAD280DF05A00107AE3 /* TokensListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FAC280DF05A00107AE3 /* TokensListView.swift */; };
+		26AF0FAF280DF0D900107AE3 /* TokensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FAE280DF0D900107AE3 /* TokensView.swift */; };
+		26AF0FB1280DF1D000107AE3 /* TokensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FB0280DF1D000107AE3 /* TokensViewController.swift */; };
+		26AF0FB3280DF27D00107AE3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 26AF0FB2280DF27D00107AE3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26AF0F8B280DE27C00107AE3 /* TokensView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TokensView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AF0F98280DE2A400107AE3 /* TokensView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokensView.h; sourceTree = "<group>"; };
 		26AF0F99280DE2A400107AE3 /* TokensView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TokensView.docc; sourceTree = "<group>"; };
+		26AF0F9C280DE54000107AE3 /* TokenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenUtils.swift; sourceTree = "<group>"; };
+		26AF0F9E280DE63500107AE3 /* TokenColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenColorButton.swift; sourceTree = "<group>"; };
+		26AF0FA0280DE74E00107AE3 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		26AF0FA2280DE7B200107AE3 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		26AF0FA4280DE7E600107AE3 /* TokenAttachmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAttachmentCell.swift; sourceTree = "<group>"; };
+		26AF0FA6280DE8AF00107AE3 /* TokensTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensTextFieldCell.swift; sourceTree = "<group>"; };
+		26AF0FA8280DEE2600107AE3 /* TokensTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensTextField.swift; sourceTree = "<group>"; };
+		26AF0FAA280DEF8B00107AE3 /* TokensColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensColorPickerView.swift; sourceTree = "<group>"; };
+		26AF0FAC280DF05A00107AE3 /* TokensListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensListView.swift; sourceTree = "<group>"; };
+		26AF0FAE280DF0D900107AE3 /* TokensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensView.swift; sourceTree = "<group>"; };
+		26AF0FB0280DF1D000107AE3 /* TokensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensViewController.swift; sourceTree = "<group>"; };
+		26AF0FB2280DF27D00107AE3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +55,7 @@
 		26AF0F81280DE27C00107AE3 = {
 			isa = PBXGroup;
 			children = (
+				26AF0FB2280DF27D00107AE3 /* README.md */,
 				26AF0F8D280DE27C00107AE3 /* TokensView */,
 				26AF0F8C280DE27C00107AE3 /* Products */,
 			);
@@ -57,6 +82,17 @@
 			children = (
 				26AF0F98280DE2A400107AE3 /* TokensView.h */,
 				26AF0F99280DE2A400107AE3 /* TokensView.docc */,
+				26AF0F9C280DE54000107AE3 /* TokenUtils.swift */,
+				26AF0F9E280DE63500107AE3 /* TokenColorButton.swift */,
+				26AF0FA2280DE7B200107AE3 /* Token.swift */,
+				26AF0FA4280DE7E600107AE3 /* TokenAttachmentCell.swift */,
+				26AF0FA6280DE8AF00107AE3 /* TokensTextFieldCell.swift */,
+				26AF0FA8280DEE2600107AE3 /* TokensTextField.swift */,
+				26AF0FAA280DEF8B00107AE3 /* TokensColorPickerView.swift */,
+				26AF0FAC280DF05A00107AE3 /* TokensListView.swift */,
+				26AF0FAE280DF0D900107AE3 /* TokensView.swift */,
+				26AF0FB0280DF1D000107AE3 /* TokensViewController.swift */,
+				26AF0FA0280DE74E00107AE3 /* Icons.xcassets */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -131,6 +167,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26AF0FB3280DF27D00107AE3 /* README.md in Resources */,
+				26AF0FA1280DE74E00107AE3 /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +180,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				26AF0F9B280DE2A400107AE3 /* TokensView.docc in Sources */,
+				26AF0FA5280DE7E700107AE3 /* TokenAttachmentCell.swift in Sources */,
+				26AF0FAB280DEF8B00107AE3 /* TokensColorPickerView.swift in Sources */,
+				26AF0F9F280DE63500107AE3 /* TokenColorButton.swift in Sources */,
+				26AF0F9D280DE54000107AE3 /* TokenUtils.swift in Sources */,
+				26AF0FA3280DE7B200107AE3 /* Token.swift in Sources */,
+				26AF0FAF280DF0D900107AE3 /* TokensView.swift in Sources */,
+				26AF0FAD280DF05A00107AE3 /* TokensListView.swift in Sources */,
+				26AF0FA7280DE8AF00107AE3 /* TokensTextFieldCell.swift in Sources */,
+				26AF0FB1280DF1D000107AE3 /* TokensViewController.swift in Sources */,
+				26AF0FA9280DEE2600107AE3 /* TokensTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
