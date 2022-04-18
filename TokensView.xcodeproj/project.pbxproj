@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26AF0F90280DE27C00107AE3 /* TokensView.docc in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0F8F280DE27C00107AE3 /* TokensView.docc */; };
-		26AF0F91280DE27C00107AE3 /* TokensView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF0F8E280DE27C00107AE3 /* TokensView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26AF0F9A280DE2A400107AE3 /* TokensView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF0F98280DE2A400107AE3 /* TokensView.h */; };
+		26AF0F9B280DE2A400107AE3 /* TokensView.docc in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0F99280DE2A400107AE3 /* TokensView.docc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26AF0F8B280DE27C00107AE3 /* TokensView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TokensView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26AF0F8E280DE27C00107AE3 /* TokensView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TokensView.h; sourceTree = "<group>"; };
-		26AF0F8F280DE27C00107AE3 /* TokensView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TokensView.docc; sourceTree = "<group>"; };
+		26AF0F98280DE2A400107AE3 /* TokensView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokensView.h; sourceTree = "<group>"; };
+		26AF0F99280DE2A400107AE3 /* TokensView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TokensView.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,11 +47,19 @@
 		26AF0F8D280DE27C00107AE3 /* TokensView */ = {
 			isa = PBXGroup;
 			children = (
-				26AF0F8E280DE27C00107AE3 /* TokensView.h */,
-				26AF0F8F280DE27C00107AE3 /* TokensView.docc */,
+				26AF0F97280DE2A400107AE3 /* Sources */,
 			);
 			path = TokensView;
 			sourceTree = "<group>";
+		};
+		26AF0F97280DE2A400107AE3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				26AF0F98280DE2A400107AE3 /* TokensView.h */,
+				26AF0F99280DE2A400107AE3 /* TokensView.docc */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -60,7 +68,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26AF0F91280DE27C00107AE3 /* TokensView.h in Headers */,
+				26AF0F9A280DE2A400107AE3 /* TokensView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +101,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = TokensView;
 				TargetAttributes = {
 					26AF0F8A280DE27C00107AE3 = {
 						CreatedOnToolsVersion = 13.3;
@@ -132,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26AF0F90280DE27C00107AE3 /* TokensView.docc in Sources */,
+				26AF0F9B280DE2A400107AE3 /* TokensView.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +199,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -247,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;

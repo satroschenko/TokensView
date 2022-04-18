@@ -2,7 +2,7 @@
 //  TokensView.h
 //  TokensView
 //
-//  Created by Siarhei Atroshchanka on 18.04.22.
+//  Created by Sergey Atroschenko on 18.04.22.
 //
 
 #import <Foundation/Foundation.h>
