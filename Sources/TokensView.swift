@@ -61,7 +61,11 @@ public class TokensView: NSView {
         textField.isBezeled = false
         textField.isSelectable = false
         textField.stringValue = "Assing Tags to ..."
-        textField.font = NSFont.preferredFont(forTextStyle: .headline)
+        if #available(macOS 11.0, *) {
+            textField.font = NSFont.preferredFont(forTextStyle: .headline)
+        } else {
+            textField.font = NSFont.systemFont(ofSize: 14)
+        }
         
         return textField
     }()
@@ -79,7 +83,7 @@ public class TokensView: NSView {
     public var textField: TokensTextField = {
         let textField = TokensTextField()
         textField.isEditable = true
-        textField.font = TokenUtils.defaultFont
+        textField.font = TokenUtils.defaultFont()
         textField.stringValue = ""
         
         return textField

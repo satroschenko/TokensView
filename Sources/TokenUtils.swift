@@ -11,7 +11,14 @@ import Cocoa
 
 public class TokenUtils {
     public static let replacementSymbol = "\u{fffc}"
-    public static let defaultFont = NSFont.preferredFont(forTextStyle: .body)
+
+    public static func defaultFont() -> NSFont {
+        if #available(macOS 11.0, *) {
+            return NSFont.preferredFont(forTextStyle: .body)
+        } else {
+            return NSFont.systemFont(ofSize: 12)
+        }
+    }
 }
 
 

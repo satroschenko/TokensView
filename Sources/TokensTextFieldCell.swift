@@ -113,7 +113,7 @@ class TokensTextFieldCell: NSTextFieldCell {
     }
     
     private func defaultFont() -> NSFont {
-        return (self.controlView as? NSTextField)?.font ?? TokenUtils.defaultFont
+        return (self.controlView as? NSTextField)?.font ?? TokenUtils.defaultFont()
     }
 }
 

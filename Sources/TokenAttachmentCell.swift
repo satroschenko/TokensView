@@ -43,7 +43,7 @@ public class TokenAttachmentCell: NSTextAttachmentCell {
     }
     
     private func defaultFont() -> NSFont {
-        return self.font ?? TokenUtils.defaultFont
+        return self.font ?? TokenUtils.defaultFont()
     }
     
     public override func cellSize() -> NSSize {
