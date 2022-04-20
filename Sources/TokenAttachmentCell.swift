@@ -20,6 +20,15 @@ public enum TokensDrawingMode {
             return NSColor.alternateSelectedControlTextColor
         }
     }
+    
+    func fillColor(for token: Token) -> NSColor {
+        switch self {
+        case .default:
+            return NSColor(hexString: token.hexString)
+        case .selected:
+            return NSColor.selectedControlColor
+        }
+    }
 }
 
 public class TokenAttachmentCell: NSTextAttachmentCell {
@@ -105,7 +114,7 @@ public class TokenAttachmentCell: NSTextAttachmentCell {
         let path = self.tokenPath(for: cellFrame)
         path.addClip()
         
-        fillColor().setFill()
+        drawingMode.fillColor(for: token).setFill()
         path.fill()
         drawingMode.strokeColor().setStroke()
         path.stroke()
@@ -124,15 +133,6 @@ public class TokenAttachmentCell: NSTextAttachmentCell {
             .foregroundColor: NSColor.white,
             .paragraphStyle: style
         ])
-    }
-    
-    func fillColor() -> NSColor {
-        switch drawingMode {
-        case .default:
-            return NSColor(hexString: token.hexString)
-        case .selected:
-            return NSColor.selectedControlColor
-        }
     }
 }
 

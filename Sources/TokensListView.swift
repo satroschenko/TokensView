@@ -24,6 +24,7 @@ public class TokensListView: NSView {
     public var stackView: NSStackView = {
         let stackView = NSStackView()
         stackView.orientation = .vertical
+        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.spacing = 2.0
         
         return stackView
@@ -53,10 +54,8 @@ public class TokensListView: NSView {
 private extension TokensListView {
     
     func setupUI() {
-        
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(stackView)
                 
+        self.addSubview(stackView)
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5),
             stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -5),

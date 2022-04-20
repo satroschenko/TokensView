@@ -60,6 +60,7 @@ public class TokensView: NSView {
         textField.alignment = .center
         textField.isBezeled = false
         textField.isSelectable = false
+        textField.translatesAutoresizingMaskIntoConstraints = false
         textField.stringValue = "Assing Tags to ..."
         if #available(macOS 11.0, *) {
             textField.font = NSFont.preferredFont(forTextStyle: .headline)
@@ -72,11 +73,13 @@ public class TokensView: NSView {
     
     public var colorPickerView: TokensColorPickerView = {
         let view = TokensColorPickerView()
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     public var tokensListView: TokensListView = {
         let view = TokensListView()
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
@@ -85,12 +88,14 @@ public class TokensView: NSView {
         textField.isEditable = true
         textField.font = TokenUtils.defaultFont()
         textField.stringValue = ""
+        textField.translatesAutoresizingMaskIntoConstraints = false
         
         return textField
     }()
     
     public var contentView: NSView = {
         let view = NSView()
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
@@ -129,20 +134,12 @@ public class TokensView: NSView {
 private extension TokensView {
     
     func setupUI() {
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(titleLabel)
-        
-        textField.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(textField)
-        textField.tokensDelegate = self
-        
-        contentView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(contentView)
         
-        colorPickerView.translatesAutoresizingMaskIntoConstraints = false
+        textField.tokensDelegate = self
         colorPickerView.delegate = self
-        
-        tokensListView.translatesAutoresizingMaskIntoConstraints = false
         tokensListView.delegate = self
                 
         NSLayoutConstraint.activate([

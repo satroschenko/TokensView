@@ -48,7 +48,7 @@ public class TokensViewController: NSViewController {
 extension TokensViewController: TokensViewDelegate {
     public func contentSizeChangedFor(tokensView: TokensView) {
         let size = self.view.fittingSize
-        NSAnimationContext.runAnimationGroup { context in
+        NSAnimationContext.runAnimationGroup { _ in
             popover?.contentSize = size
         }
     }
