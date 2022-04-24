@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26A3D15428108D5A008A272F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3D15328108D5A008A272F /* AppDelegate.swift */; };
+		26A3D15628108D5A008A272F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3D15528108D5A008A272F /* ViewController.swift */; };
+		26A3D15828108D5E008A272F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A3D15728108D5D008A272F /* Assets.xcassets */; };
+		26A3D15B28108D5E008A272F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A3D15928108D5E008A272F /* Main.storyboard */; };
+		26A3D16128108FB2008A272F /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3D16028108FB2008A272F /* WindowController.swift */; };
+		26AF0F9A280DE2A400107AE3 /* TokensView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF0F98280DE2A400107AE3 /* TokensView.h */; };
+		26AF0F9B280DE2A400107AE3 /* TokensView.docc in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0F99280DE2A400107AE3 /* TokensView.docc */; };
+		26AF0F9D280DE54000107AE3 /* TokenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0F9C280DE54000107AE3 /* TokenUtils.swift */; };
+		26AF0F9F280DE63500107AE3 /* TokenColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0F9E280DE63500107AE3 /* TokenColorButton.swift */; };
+		26AF0FA1280DE74E00107AE3 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AF0FA0280DE74E00107AE3 /* Icons.xcassets */; };
+		26AF0FA3280DE7B200107AE3 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FA2280DE7B200107AE3 /* Token.swift */; };
+		26AF0FA5280DE7E700107AE3 /* TokenAttachmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FA4280DE7E600107AE3 /* TokenAttachmentCell.swift */; };
+		26AF0FA7280DE8AF00107AE3 /* TokensTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FA6280DE8AF00107AE3 /* TokensTextFieldCell.swift */; };
+		26AF0FA9280DEE2600107AE3 /* TokensTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FA8280DEE2600107AE3 /* TokensTextField.swift */; };
+		26AF0FAB280DEF8B00107AE3 /* TokensColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FAA280DEF8B00107AE3 /* TokensColorPickerView.swift */; };
+		26AF0FAD280DF05A00107AE3 /* TokensListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FAC280DF05A00107AE3 /* TokensListView.swift */; };
+		26AF0FAF280DF0D900107AE3 /* TokensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FAE280DF0D900107AE3 /* TokensView.swift */; };
+		26AF0FB1280DF1D000107AE3 /* TokensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0FB0280DF1D000107AE3 /* TokensViewController.swift */; };
+		26AF0FB3280DF27D00107AE3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 26AF0FB2280DF27D00107AE3 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26A3D15128108D5A008A272F /* TonensViewTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TonensViewTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26A3D15328108D5A008A272F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26A3D15528108D5A008A272F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26A3D15728108D5D008A272F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26A3D15A28108D5E008A272F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26A3D15C28108D5E008A272F /* TonensViewTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TonensViewTestApp.entitlements; sourceTree = "<group>"; };
+		26A3D16028108FB2008A272F /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		26AF0F8B280DE27C00107AE3 /* TokensView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TokensView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26AF0F98280DE2A400107AE3 /* TokensView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokensView.h; sourceTree = "<group>"; };
+		26AF0F99280DE2A400107AE3 /* TokensView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TokensView.docc; sourceTree = "<group>"; };
+		26AF0F9C280DE54000107AE3 /* TokenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenUtils.swift; sourceTree = "<group>"; };
+		26AF0F9E280DE63500107AE3 /* TokenColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenColorButton.swift; sourceTree = "<group>"; };
+		26AF0FA0280DE74E00107AE3 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		26AF0FA2280DE7B200107AE3 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		26AF0FA4280DE7E600107AE3 /* TokenAttachmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAttachmentCell.swift; sourceTree = "<group>"; };
+		26AF0FA6280DE8AF00107AE3 /* TokensTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensTextFieldCell.swift; sourceTree = "<group>"; };
+		26AF0FA8280DEE2600107AE3 /* TokensTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensTextField.swift; sourceTree = "<group>"; };
+		26AF0FAA280DEF8B00107AE3 /* TokensColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensColorPickerView.swift; sourceTree = "<group>"; };
+		26AF0FAC280DF05A00107AE3 /* TokensListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensListView.swift; sourceTree = "<group>"; };
+		26AF0FAE280DF0D900107AE3 /* TokensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensView.swift; sourceTree = "<group>"; };
+		26AF0FB0280DF1D000107AE3 /* TokensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensViewController.swift; sourceTree = "<group>"; };
+		26AF0FB2280DF27D00107AE3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26A3D14E28108D5A008A272F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26AF0F88280DE27C00107AE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26A3D15228108D5A008A272F /* TonensViewTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				26A3D15328108D5A008A272F /* AppDelegate.swift */,
+				26A3D15528108D5A008A272F /* ViewController.swift */,
+				26A3D16028108FB2008A272F /* WindowController.swift */,
+				26A3D15728108D5D008A272F /* Assets.xcassets */,
+				26A3D15928108D5E008A272F /* Main.storyboard */,
+				26A3D15C28108D5E008A272F /* TonensViewTestApp.entitlements */,
+			);
+			path = TonensViewTestApp;
+			sourceTree = "<group>";
+		};
+		26AF0F81280DE27C00107AE3 = {
+			isa = PBXGroup;
+			children = (
+				26AF0FB2280DF27D00107AE3 /* README.md */,
+				26AF0F8D280DE27C00107AE3 /* TokensView */,
+				26A3D15228108D5A008A272F /* TonensViewTestApp */,
+				26AF0F8C280DE27C00107AE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26AF0F8C280DE27C00107AE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26AF0F8B280DE27C00107AE3 /* TokensView.framework */,
+				26A3D15128108D5A008A272F /* TonensViewTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26AF0F8D280DE27C00107AE3 /* TokensView */ = {
+			isa = PBXGroup;
+			children = (
+				26AF0F97280DE2A400107AE3 /* Sources */,
+			);
+			path = TokensView;
+			sourceTree = "<group>";
+		};
+		26AF0F97280DE2A400107AE3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				26AF0F98280DE2A400107AE3 /* TokensView.h */,
+				26AF0F99280DE2A400107AE3 /* TokensView.docc */,
+				26AF0F9C280DE54000107AE3 /* TokenUtils.swift */,
+				26AF0F9E280DE63500107AE3 /* TokenColorButton.swift */,
+				26AF0FA2280DE7B200107AE3 /* Token.swift */,
+				26AF0FA4280DE7E600107AE3 /* TokenAttachmentCell.swift */,
+				26AF0FA6280DE8AF00107AE3 /* TokensTextFieldCell.swift */,
+				26AF0FA8280DEE2600107AE3 /* TokensTextField.swift */,
+				26AF0FAA280DEF8B00107AE3 /* TokensColorPickerView.swift */,
+				26AF0FAC280DF05A00107AE3 /* TokensListView.swift */,
+				26AF0FAE280DF0D900107AE3 /* TokensView.swift */,
+				26AF0FB0280DF1D000107AE3 /* TokensViewController.swift */,
+				26AF0FA0280DE74E00107AE3 /* Icons.xcassets */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26AF0F86280DE27C00107AE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26AF0F9A280DE2A400107AE3 /* TokensView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		26A3D15028108D5A008A272F /* TonensViewTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26A3D15F28108D5E008A272F /* Build configuration list for PBXNativeTarget "TonensViewTestApp" */;
+			buildPhases = (
+				26A3D14D28108D5A008A272F /* Sources */,
+				26A3D14E28108D5A008A272F /* Frameworks */,
+				26A3D14F28108D5A008A272F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TonensViewTestApp;
+			productName = TonensViewTestApp;
+			productReference = 26A3D15128108D5A008A272F /* TonensViewTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26AF0F8A280DE27C00107AE3 /* TokensView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26AF0F94280DE27C00107AE3 /* Build configuration list for PBXNativeTarget "TokensView" */;
+			buildPhases = (
+				26AF0F86280DE27C00107AE3 /* Headers */,
+				26AF0F87280DE27C00107AE3 /* Sources */,
+				26AF0F88280DE27C00107AE3 /* Frameworks */,
+				26AF0F89280DE27C00107AE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokensView;
+			productName = TokensView;
+			productReference = 26AF0F8B280DE27C00107AE3 /* TokensView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26AF0F82280DE27C00107AE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = TokensView;
+				TargetAttributes = {
+					26A3D15028108D5A008A272F = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					26AF0F8A280DE27C00107AE3 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 26AF0F85280DE27C00107AE3 /* Build configuration list for PBXProject "TokensView" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26AF0F81280DE27C00107AE3;
+			productRefGroup = 26AF0F8C280DE27C00107AE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26AF0F8A280DE27C00107AE3 /* TokensView */,
+				26A3D15028108D5A008A272F /* TonensViewTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26A3D14F28108D5A008A272F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A3D15828108D5E008A272F /* Assets.xcassets in Resources */,
+				26A3D15B28108D5E008A272F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26AF0F89280DE27C00107AE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26AF0FB3280DF27D00107AE3 /* README.md in Resources */,
+				26AF0FA1280DE74E00107AE3 /* Icons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26A3D14D28108D5A008A272F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A3D15628108D5A008A272F /* ViewController.swift in Sources */,
+				26A3D16128108FB2008A272F /* WindowController.swift in Sources */,
+				26A3D15428108D5A008A272F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26AF0F87280DE27C00107AE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26AF0F9B280DE2A400107AE3 /* TokensView.docc in Sources */,
+				26AF0FA5280DE7E700107AE3 /* TokenAttachmentCell.swift in Sources */,
+				26AF0FAB280DEF8B00107AE3 /* TokensColorPickerView.swift in Sources */,
+				26AF0F9F280DE63500107AE3 /* TokenColorButton.swift in Sources */,
+				26AF0F9D280DE54000107AE3 /* TokenUtils.swift in Sources */,
+				26AF0FA3280DE7B200107AE3 /* Token.swift in Sources */,
+				26AF0FAF280DF0D900107AE3 /* TokensView.swift in Sources */,
+				26AF0FAD280DF05A00107AE3 /* TokensListView.swift in Sources */,
+				26AF0FA7280DE8AF00107AE3 /* TokensTextFieldCell.swift in Sources */,
+				26AF0FB1280DF1D000107AE3 /* TokensViewController.swift in Sources */,
+				26AF0FA9280DEE2600107AE3 /* TokensTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		26A3D15928108D5E008A272F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26A3D15A28108D5E008A272F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26A3D15D28108D5E008A272F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TonensViewTestApp/TonensViewTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZGPY786UX7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 TokensView. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.satroschenko.TonensViewTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		26A3D15E28108D5E008A272F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TonensViewTestApp/TonensViewTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZGPY786UX7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 TokensView. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.satroschenko.TonensViewTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		26AF0F92280DE27C00107AE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		26AF0F93280DE27C00107AE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		26AF0F95280DE27C00107AE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZGPY786UX7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.satroschenko.TokensView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		26AF0F96280DE27C00107AE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZGPY786UX7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.satroschenko.TokensView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26A3D15F28108D5E008A272F /* Build configuration list for PBXNativeTarget "TonensViewTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26A3D15D28108D5E008A272F /* Debug */,
+				26A3D15E28108D5E008A272F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26AF0F85280DE27C00107AE3 /* Build configuration list for PBXProject "TokensView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26AF0F92280DE27C00107AE3 /* Debug */,
+				26AF0F93280DE27C00107AE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26AF0F94280DE27C00107AE3 /* Build configuration list for PBXNativeTarget "TokensView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26AF0F95280DE27C00107AE3 /* Debug */,
+				26AF0F96280DE27C00107AE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26AF0F82280DE27C00107AE3 /* Project object */;
+}
