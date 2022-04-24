@@ -3,6 +3,7 @@ Pod::Spec.new do |spec|
   spec.version                  = "0.9.0"
   spec.summary                  = "TokensView is a macos framework for tags/token management, like tags in Finder."
   spec.homepage                 = "https://github.com/satroschenko/TokensView"
+  spec.screenshot               = "https://github.com/satroschenko/TokensView/raw/main/images/example.gif"
   spec.license                  = {type: "MIT", file: "LICENSE"}
   spec.author                   = { "Sergey Atroschenko" => "satroschenko@gmail.com" }
   spec.platform                 = :macos
