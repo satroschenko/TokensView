@@ -12,7 +12,7 @@ public class Token: Equatable, Hashable {
     public let title: String
     public let hexString: String
     
-    init(title: String, hexString: String) {
+    public init(title: String, hexString: String) {
         self.title = title
         self.hexString = hexString
     }

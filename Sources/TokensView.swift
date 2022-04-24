@@ -28,15 +28,21 @@ public protocol TokensViewDataSource: AnyObject {
 }
 
 public protocol TokensViewDelegate: AnyObject {
+    func tokenView(_ tokenView: TokensView, tokensChahged tokens: Set<Token>)
+}
+
+public protocol TokensViewSizeDelegate: AnyObject {
     func contentSizeChangedFor(tokensView: TokensView)
 }
 
 extension TokensViewDataSource {
-    func colorListFor(tokensView: TokensView) -> [NSColor]? { return nil }
+    // Default implementation.
+    public func colorListFor(tokensView: TokensView) -> [NSColor]? { return nil }
     public func titleFor(tokensView: TokensView) -> String? { return nil }
 }
 
-extension TokensViewDelegate {
+extension TokensViewSizeDelegate {
+    // Default implementation.
     func contentSizeChangedFor(tokensView: TokensView) {}
 }
 
@@ -52,6 +58,8 @@ public class TokensView: NSView {
     
     public weak var dataSource: TokensViewDataSource?
     public weak var delegate: TokensViewDelegate?
+    
+    public weak var sizeDelegate: TokensViewSizeDelegate?    
     
     public var titleLabel: NSTextField = {
         let textField = NSTextField()
@@ -175,7 +183,7 @@ private extension TokensView {
         case .existingToken:
             addViewToContent(tokensListView)
         }
-        delegate?.contentSizeChangedFor(tokensView: self)
+        sizeDelegate?.contentSizeChangedFor(tokensView: self)
     }
     
     func addViewToContent(_ view: NSView) {
@@ -199,7 +207,7 @@ extension TokensView: TokensTextFieldDelegate {
         if let existingToken = allTokens.first(where: {$0.title == name}) {
             self.state = .existingToken
             tokensListView.setTokens(Set(arrayLiteral: existingToken))
-            delegate?.contentSizeChangedFor(tokensView: self)
+            sizeDelegate?.contentSizeChangedFor(tokensView: self)
         
         } else {
             self.state = text.isEmpty ? .initial : .newToken
@@ -210,6 +218,10 @@ extension TokensView: TokensTextFieldDelegate {
     public func tokenFor(title: String) -> Token? {
         let colorString = colorPickerView.selectedColor().toHexString()
         return Token(title: title, hexString: colorString)
+    }
+    
+    public func tokensTextField(_ textField: TokensTextField, tokensChanged tokens: Set<Token>) {
+        delegate?.tokenView(self, tokensChahged: tokens)
     }
 }
 
@@ -222,7 +234,7 @@ extension TokensView: TokensColorPickerViewDelegate {
 extension TokensView: TokensListViewDelegate {
     public func tokenClicked(tokensView: TokensListView, token: Token) {
         textField.addTokenRequested(token)
-        delegate?.contentSizeChangedFor(tokensView: self)
+        sizeDelegate?.contentSizeChangedFor(tokensView: self)
     }
 }
 

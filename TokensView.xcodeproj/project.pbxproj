@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26A3D15428108D5A008A272F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3D15328108D5A008A272F /* AppDelegate.swift */; };
+		26A3D15628108D5A008A272F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3D15528108D5A008A272F /* ViewController.swift */; };
+		26A3D15828108D5E008A272F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A3D15728108D5D008A272F /* Assets.xcassets */; };
+		26A3D15B28108D5E008A272F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A3D15928108D5E008A272F /* Main.storyboard */; };
+		26A3D16128108FB2008A272F /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A3D16028108FB2008A272F /* WindowController.swift */; };
 		26AF0F9A280DE2A400107AE3 /* TokensView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF0F98280DE2A400107AE3 /* TokensView.h */; };
 		26AF0F9B280DE2A400107AE3 /* TokensView.docc in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0F99280DE2A400107AE3 /* TokensView.docc */; };
 		26AF0F9D280DE54000107AE3 /* TokenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF0F9C280DE54000107AE3 /* TokenUtils.swift */; };
@@ -24,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26A3D15128108D5A008A272F /* TonensViewTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TonensViewTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26A3D15328108D5A008A272F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26A3D15528108D5A008A272F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26A3D15728108D5D008A272F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26A3D15A28108D5E008A272F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26A3D15C28108D5E008A272F /* TonensViewTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TonensViewTestApp.entitlements; sourceTree = "<group>"; };
+		26A3D16028108FB2008A272F /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		26AF0F8B280DE27C00107AE3 /* TokensView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TokensView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AF0F98280DE2A400107AE3 /* TokensView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokensView.h; sourceTree = "<group>"; };
 		26AF0F99280DE2A400107AE3 /* TokensView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TokensView.docc; sourceTree = "<group>"; };
@@ -42,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		26A3D14E28108D5A008A272F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26AF0F88280DE27C00107AE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,11 +71,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26A3D15228108D5A008A272F /* TonensViewTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				26A3D15328108D5A008A272F /* AppDelegate.swift */,
+				26A3D15528108D5A008A272F /* ViewController.swift */,
+				26A3D16028108FB2008A272F /* WindowController.swift */,
+				26A3D15728108D5D008A272F /* Assets.xcassets */,
+				26A3D15928108D5E008A272F /* Main.storyboard */,
+				26A3D15C28108D5E008A272F /* TonensViewTestApp.entitlements */,
+			);
+			path = TonensViewTestApp;
+			sourceTree = "<group>";
+		};
 		26AF0F81280DE27C00107AE3 = {
 			isa = PBXGroup;
 			children = (
 				26AF0FB2280DF27D00107AE3 /* README.md */,
 				26AF0F8D280DE27C00107AE3 /* TokensView */,
+				26A3D15228108D5A008A272F /* TonensViewTestApp */,
 				26AF0F8C280DE27C00107AE3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				26AF0F8B280DE27C00107AE3 /* TokensView.framework */,
+				26A3D15128108D5A008A272F /* TonensViewTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +145,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		26A3D15028108D5A008A272F /* TonensViewTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26A3D15F28108D5E008A272F /* Build configuration list for PBXNativeTarget "TonensViewTestApp" */;
+			buildPhases = (
+				26A3D14D28108D5A008A272F /* Sources */,
+				26A3D14E28108D5A008A272F /* Frameworks */,
+				26A3D14F28108D5A008A272F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TonensViewTestApp;
+			productName = TonensViewTestApp;
+			productReference = 26A3D15128108D5A008A272F /* TonensViewTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		26AF0F8A280DE27C00107AE3 /* TokensView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26AF0F94280DE27C00107AE3 /* Build configuration list for PBXNativeTarget "TokensView" */;
@@ -136,9 +187,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = TokensView;
 				TargetAttributes = {
+					26A3D15028108D5A008A272F = {
+						CreatedOnToolsVersion = 13.3;
+					};
 					26AF0F8A280DE27C00107AE3 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -158,11 +213,21 @@
 			projectRoot = "";
 			targets = (
 				26AF0F8A280DE27C00107AE3 /* TokensView */,
+				26A3D15028108D5A008A272F /* TonensViewTestApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		26A3D14F28108D5A008A272F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A3D15828108D5E008A272F /* Assets.xcassets in Resources */,
+				26A3D15B28108D5E008A272F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26AF0F89280DE27C00107AE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +240,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		26A3D14D28108D5A008A272F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A3D15628108D5A008A272F /* ViewController.swift in Sources */,
+				26A3D16128108FB2008A272F /* WindowController.swift in Sources */,
+				26A3D15428108D5A008A272F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26AF0F87280DE27C00107AE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,7 +270,74 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		26A3D15928108D5E008A272F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26A3D15A28108D5E008A272F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		26A3D15D28108D5E008A272F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TonensViewTestApp/TonensViewTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZGPY786UX7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 TokensView. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.satroschenko.TonensViewTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		26A3D15E28108D5E008A272F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TonensViewTestApp/TonensViewTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZGPY786UX7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 TokensView. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.satroschenko.TonensViewTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		26AF0F92280DE27C00107AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -374,6 +516,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		26A3D15F28108D5E008A272F /* Build configuration list for PBXNativeTarget "TonensViewTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26A3D15D28108D5E008A272F /* Debug */,
+				26A3D15E28108D5E008A272F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		26AF0F85280DE27C00107AE3 /* Build configuration list for PBXProject "TokensView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

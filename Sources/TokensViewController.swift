@@ -11,6 +11,7 @@ import Cocoa
 public class TokensViewController: NSViewController {
     
     public weak var dataSource: TokensViewDataSource?
+    public weak var delegate: TokensViewDelegate?
     
     // Set this property to allow popover change size dinamically.
     public weak var popover: NSPopover?
@@ -31,6 +32,7 @@ public class TokensViewController: NSViewController {
         let tokenView = TokensView()
         tokenView.dataSource = self
         tokenView.delegate = self
+        tokenView.sizeDelegate = self
         self.view = tokenView
     }
     
@@ -45,7 +47,7 @@ public class TokensViewController: NSViewController {
     }
 }
 
-extension TokensViewController: TokensViewDelegate {
+extension TokensViewController: TokensViewSizeDelegate {
     public func contentSizeChangedFor(tokensView: TokensView) {
         let size = self.view.fittingSize
         NSAnimationContext.runAnimationGroup { _ in
@@ -54,6 +56,11 @@ extension TokensViewController: TokensViewDelegate {
     }
 }
 
+extension TokensViewController: TokensViewDelegate {
+    public func tokenView(_ tokenView: TokensView, tokensChahged tokens: Set<Token>) {
+        delegate?.tokenView(tokenView, tokensChahged: tokens)
+    }
+}
 
 extension TokensViewController: TokensViewDataSource {
     

@@ -70,7 +70,7 @@ private extension TokensListView {
             stackView.removeArrangedSubview($0)
             $0.removeFromSuperview()
         })
-        let buttons: [NSButton] = self.allTokens.sorted(by: {$0.title > $1.title}).compactMap({
+        let buttons: [NSButton] = self.allTokens.sorted(by: {$0.title < $1.title}).compactMap({
             
             let button = self.newButton()
             button.title = $0.title

@@ -22,7 +22,7 @@ public class TokenUtils {
 }
 
 
-extension NSColor {
+public extension NSColor {
 
     convenience init(hexString: String) {
         

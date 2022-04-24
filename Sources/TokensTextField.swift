@@ -11,17 +11,20 @@ import Cocoa
 public protocol TokensTextFieldDelegate: AnyObject {
     func tokensTextField(_ textField: TokensTextField, textChanged text: String, tokens: Set<Token>)
     func tokenFor(title: String) -> Token?
+    func tokensTextField(_ textField: TokensTextField, tokensChanged tokens: Set<Token>)
 }
 
 // Default implementation.
 extension TokensTextFieldDelegate {
     func tokensTextField(_ textField: TokensTextField, textChanged text: String, tokens: Set<Token>) {}
     func tokenFor(title: String) -> Token? { return nil }
+    func tokensTextField(_ textField: TokensTextField, tokensChanged tokens: Set<Token>) {}
 }
 
 public class TokensTextField: NSTextField {
         
     weak var tokensDelegate: TokensTextFieldDelegate?
+    private var currentTokens = Set<Token>()
     
     init() {
         super.init(frame: .zero)
@@ -97,7 +100,9 @@ private extension TokensTextField {
             tokenCell()?.addAtachment(attachment)
         }
         
-        tokensDelegate?.tokensTextField(self, textChanged: currentText(), tokens: existingTokens())
+        currentTokens = existingTokens()
+        tokensDelegate?.tokensTextField(self, textChanged: currentText(), tokens: currentTokens)
+        tokensDelegate?.tokensTextField(self, tokensChanged: currentTokens)
     }
     
     func addNewToken(_ token: Token) {
@@ -116,7 +121,9 @@ private extension TokensTextField {
         tokenCell()?.removeAllTextExceptTokens()
         tokenCell()?.addAtachment(attachment)
 
-        tokensDelegate?.tokensTextField(self, textChanged: currentText(), tokens: existingTokens())
+        currentTokens = existingTokens()
+        tokensDelegate?.tokensTextField(self, textChanged: currentText(), tokens: currentTokens)
+        tokensDelegate?.tokensTextField(self, tokensChanged: currentTokens)
     }
 }
 
@@ -124,6 +131,10 @@ extension TokensTextField: NSTextFieldDelegate {
     
     public func controlTextDidChange(_ obj: Notification) {
         tokensDelegate?.tokensTextField(self, textChanged: currentText(), tokens: existingTokens())
+        if currentTokens != existingTokens() {
+            currentTokens = existingTokens()
+            tokensDelegate?.tokensTextField(self, tokensChanged: currentTokens)
+        }
     }
     
     public func control(_ control: NSControl, textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
