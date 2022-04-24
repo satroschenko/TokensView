@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.screenshot               = "https://github.com/satroschenko/TokensView/raw/main/images/example.gif"
   spec.license                  = {type: "MIT", file: "LICENSE"}
   spec.author                   = { "Sergey Atroschenko" => "satroschenko@gmail.com" }
-  spec.platform                 = :macos
+  spec.platform                 = :osx
   spec.osx.deployment_target    = "10.14"
   spec.source                   = { :git => "https://github.com/satroschenko/TokensView.git", :tag => "#{spec.version}" }
   spec.swift_versions              = ['5.3', '5.4', '5.5']
